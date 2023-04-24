@@ -7,7 +7,7 @@
 * [Java](https://www.java.com/en/download/help/whatis_java.html)
 >## Data flow
 In this project, we have two layers-
-* **Controller** - The controller layer handles the HTTP requests, translates the JSON parameter to object, and authenticates the request and transfer it to the business (service) layer. In short, it consists of views i.e., frontend part.
+* **Controller** - The controller layer handles the HTTP requests, translates the JSON parameter to object, and authenticates the request and transfer it to the business (service) layer. 
 * **Service** -The business layer handles all the business logic. It consists of service classes and uses services provided by data access layers.
 
 >## Data Structure used in my project
@@ -36,7 +36,7 @@ and "SpringBoot dev Tools" dependency to the project.
 * Annotate the class with @Service to indicate that it's a service class.
 * Add a private integer field to keep track of the hit count.
 * Implement a getHitCount() method  and getHitCount (String username) that returns the current hit count and HashMap as response respectively.
-* You can customize the business logic for updating and retrieving the hit count based on your requirements. For example, you can use a database or an external cache to store and retrieve the hit count.
+* You can customize the business logic for updating and retrieving the hit count based on your requirements.
 >## Project Summary
 
 The above project implements a simple URL hit counter feature using Spring Boot. It consists of a UrlHitController class that handles the URL hit count endpoint and calls the UrlHitService class to handle the business logic. The UrlHitService class maintains a hit count and provides methods to update and retrieve the hit count. The application can be tested locally by running the Spring Boot application and accessing the hit count endpoint. The implementation can be customized further based on requirements, such as associating hit counts with specific usernames.
